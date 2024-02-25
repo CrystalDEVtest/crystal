@@ -253,19 +253,35 @@ font-size: 1.5em;
 padding: 0 0.25em;
 background: '';
 }
-a.ggg, a.ggg:hover, a.ggg:focus
-{
-	text-decoration: none;
-	color: #6eff3e;
-	text-shadow: none;
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-	outline: 0 none;
+a.ggg:hover{
+background: black;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 900% 20%;
+animation: none;
 }
-a.ggg:hover, a.ggg:focus
-{
-	color: #red,green,blue;
-	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+
+a.ggg{
+text-decoration: none;
+background: linear-gradient(27deg, Red, lime,  Fuchsia, Yellow, Aqua);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 900% 20%;
+animation: AnimText 6s ease infinite;
+}
+
+@keyframes AnimText {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+
+ul.header-blog li{
+	list-style: none;
+	display: inline;
+
+}
+.header-blog {
+	right: 0;
 }

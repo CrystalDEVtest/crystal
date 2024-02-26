@@ -280,8 +280,30 @@ animation: AnimText 6s ease infinite;
 ul.header-blog li{
 	list-style: none;
 	display: inline;
-
+	line-height: 0.5;
 }
 .header-blog {
 	right: 0;
+}
+
+a.gol:hover{
+background: lime;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 900% 20%;
+animation: none;
+}
+a.gol{
+text-decoration: none;
+background: linear-gradient(27deg, DeepPink, GreenYellow,  Plum, Gold, Aqua);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 900% 20%;
+animation: AnimText 6s ease infinite;
+}
+
+@keyframes AnimText {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
 }
